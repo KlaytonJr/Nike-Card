@@ -1,0 +1,194 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+  position: relative;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #e5e5e5;
+}
+
+.container {
+  width: 263px;
+  height: 386px;
+
+  background: #ffffff;
+
+  position: absolute;
+  display: flexbox;
+
+  box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.25);
+  border-radius: 16px 50px 16px 16px;;
+}
+
+.sneakers {
+  height: 321px;
+
+  bottom: 190px;
+}
+
+.texts {
+  position: relative;
+
+  left: 20px;
+  bottom: 200px;
+}
+
+.texts h1 {
+  width: 200px;
+  font-size: 26px;
+  color: #29455F;
+}
+
+h3 {
+  color: #8F8F8F;
+  font-size: 14px;
+}
+
+h2 {
+  font-size: 22px;
+  color: #29455F;
+}
+
+p {
+  font-size: 12px;
+  color: #808080;
+  font-weight: 600;
+}
+
+.price {
+  position: relative;
+  display: flex;
+
+  bottom: 185px;
+
+  float: right;
+  right: 9px;
+}
+
+.price h3 {
+  top: 4px;
+  right: 5px;
+}
+
+.colors {
+  position: relative;
+  display: flex;
+
+  bottom: 150px;
+  left: 20px;
+}
+
+/* Selection Color */
+.select-color  input{
+  display: none;
+}
+
+.select-color label {
+  position: relative;
+  top: 30px;
+  right: 35px;
+  margin-right: 15px;
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 100%;
+  line-height: 23px;
+  cursor: pointer
+}
+
+#green {
+  background-color: #B5DB48;
+}
+#red {
+  background: #FF3838;
+}
+#blue {
+  background: #3864FF;
+}
+
+#green:checked ~ label[for="green"],
+#red:checked ~ label[for="red"],
+#blue:checked ~ label[for="blue"] {
+  color: #ffffff;
+  width: 21px;
+  height: 21px;
+  border: 1px solid #d3d3d3;
+  top: 31px;
+}
+
+.sizes {
+  position: relative;
+  display: flex;
+
+  bottom: 100px;
+  left: 20px;
+}
+
+/* Selection Size */
+.select-size  input{
+  display: none;
+}
+
+label {
+  position: relative;
+  top: 20px;
+  right: 60px;
+  margin-right: 10px;
+
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  line-height: 23px;
+  cursor: pointer
+}
+
+#t37:checked ~ label[for="t37"],
+#t38:checked ~ label[for="t38"],
+#t39:checked ~ label[for="t39"],
+#t40:checked ~ label[for="t40"] {
+  background: #B5DB48;
+  color: #ffffff;
+  border: none;
+}
+
+
+.buy {
+  position: relative;
+  display: flex;
+
+  bottom: 160px;
+  right: 20px;
+  
+  float: right ;
+}
+
+.btn {
+  width: 49px;
+  height: 80px;
+
+  border-radius: 16px;
+  border: none;
+  background: #B5DB48;
+}
